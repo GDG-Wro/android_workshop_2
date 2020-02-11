@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pet_the_dog">Pet Stefan</string>
+    <string name="number_of_taps">Number of taps: %d</string>
+</resources>

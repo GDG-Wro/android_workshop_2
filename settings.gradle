@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='MyCardApp'
+rootProject.name='GDG Android Webinar 2'

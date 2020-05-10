@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name" translatable="false">MyCardApp</string>
-    <string name="dog_name">Stefan</string>
-    <string name="pet_the_dog">Pogłaskaj Stefana</string>
-    <string name="number_of_taps">Ilość głasknięć: %d</string>
-</resources>

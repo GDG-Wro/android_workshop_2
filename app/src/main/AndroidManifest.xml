@@ -17,6 +17,7 @@
         </activity>
         <activity
             android:name=".ActivityB"
+            android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat" />
     </application>
 

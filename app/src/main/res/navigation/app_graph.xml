@@ -20,7 +20,8 @@
             app:argType="string" />
         <action
             android:id="@+id/showWarning"
-            app:destination="@+id/warningDialog" />
+            app:destination="@+id/warningDialog"
+            app:popUpTo="@id/fragmentA" />
     </fragment>
 
     <dialog

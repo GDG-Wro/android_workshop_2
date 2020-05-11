@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:theme="@style/Theme.AppCompat"
         android:label="GDG Workshop"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
 
         <activity android:name=".ActivityA">
             <intent-filter>
@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityB"
+            android:theme="@style/Theme.AppCompat" />
     </application>
 
 </manifest>

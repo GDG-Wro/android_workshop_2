@@ -10,5 +10,9 @@ class FragmentB : Fragment(R.layout.fragment_b) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         label.text = requireArguments().getString("label", "No value passed")
+
+        if (savedInstanceState == null) {
+            WarningDialogFragment().show(childFragmentManager, "tagDialog")
+        }
     }
 }

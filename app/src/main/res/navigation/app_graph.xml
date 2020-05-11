@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_graph"
+    app:startDestination="@+id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.mycardapp.FragmentA">
+        <action
+            android:id="@+id/showB"
+            app:destination="@+id/fragmentB" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.mycardapp.FragmentB">
+        <argument
+            android:name="text"
+            app:argType="string" />
+        <action
+            android:id="@+id/showWarning"
+            app:destination="@+id/warningDialog" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/warningDialog"
+        android:name="com.example.mycardapp.WarningDialogFragment" />
+
+</navigation>

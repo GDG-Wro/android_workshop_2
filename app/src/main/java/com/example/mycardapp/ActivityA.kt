@@ -7,10 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 class ActivityA : AppCompatActivity(R.layout.activity_a) {
 
     fun onOpenBButtonClick(view: View) {
-        val intent = Intent(this, ActivityB::class.java)
-            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        println(intent.flags and Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        val intent = Intent("com.example.show.b")
         startActivity(intent)
     }
 }

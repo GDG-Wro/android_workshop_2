@@ -8,8 +8,10 @@ class ActivityA : AppCompatActivity(R.layout.activity_a) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportFragmentManager.commit {
-            replace(R.id.fragmentContainer, FragmentA())
+        if (supportFragmentManager.findFragmentByTag("tagA") == null) {
+            supportFragmentManager.commit {
+                replace(R.id.fragmentContainer, FragmentA(), "tagA")
+            }
         }
     }
 }
